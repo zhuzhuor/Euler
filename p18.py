@@ -15,3 +15,19 @@ data = (
     (63, 66, 04, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31),
     (04, 62, 98, 27, 23,  9, 70, 98, 73, 93, 38, 53, 60, 04, 23),
 )
+
+def max(x, y):
+    if x == 14:
+        return data[x][y]
+    else:
+        left  = max(x + 1, y)
+        right = max(x + 1, y + 1)
+        if left > right:
+            return data[x][y] + left
+        else:
+            return data[x][y] + right
+
+print max(0, 0)
+
+
+
