@@ -1,4 +1,22 @@
 *.pyc
-*~
 *.txt
+*~
+*.swp
+.DS_Store
 
+# sage generated temp files
+p3.py
+p7.py
+p10.py
+p12.py
+p21.py
+p23.py
+p27.py
+p35.py
+p37.py
+p41.py
+p46.py
+p47.py
+p49.py
+p50.py
+p51.py

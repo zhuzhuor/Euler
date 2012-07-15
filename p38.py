@@ -1,4 +1,7 @@
+#!/usr/bin/env pypy
+
 from itertools import permutations
+
 
 def is_good(t, d):
     s = ''.join(t)

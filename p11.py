@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 s = """
     08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
     49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
@@ -27,27 +29,30 @@ print len(n)
 max = 0
 for i in range(20):
     for j in range(20 - 4 + 1):
-        m = n[20 * i + j] * n[20 * i + j + 1] * n[20 * i + j + 2] * n[20 * i + j + 3]
+        m = n[20 * i + j] * n[20 * i + j + 1] \
+                * n[20 * i + j + 2] * n[20 * i + j + 3]
         if max < m:
             max = m
 
 for i in range(20 - 4 + 1):
     for j in range(20):
-        m = n[20 * i + j] * n[20 * (i + 1) + j] * n[20 * (i + 2) + j] * n[20 * (i + 3) + j]
+        m = n[20 * i + j] * n[20 * (i + 1) + j] \
+                * n[20 * (i + 2) + j] * n[20 * (i + 3) + j]
         if max < m:
             max = m
 
 for i in range(20 - 4 + 1):
     for j in range(20 - 4 + 1):
-        m = n[20 * i + j] * n[20 * (i + 1) + j + 1] * n[20 * (i + 2) + j + 2] * n[20 * (i + 3) + j + 3]
+        m = n[20 * i + j] * n[20 * (i + 1) + j + 1] \
+                * n[20 * (i + 2) + j + 2] * n[20 * (i + 3) + j + 3]
         if max < m:
             max = m
 
 for i in range(20 - 4 + 1):
     for j in range(3, 20):
-        m = n[20 * i + j] * n[20 * (i + 1) + j - 1] * n[20 * (i + 2) + j - 2] * n[20 * (i + 3) + j - 3]
+        m = n[20 * i + j] * n[20 * (i + 1) + j - 1] \
+                * n[20 * (i + 2) + j - 2] * n[20 * (i + 3) + j - 3]
         if max < m:
             max = m
 
 print max
-

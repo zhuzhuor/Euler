@@ -1,6 +1,7 @@
 #!/usr/bin/env pypy
 
-def satisfied(num, scale=[2,]):
+
+def satisfied(num, scale=[2, ]):
     digits = list(str(num))
     digits.sort()
     for i in scale:

@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 a = 1
 b = 2
 s = b

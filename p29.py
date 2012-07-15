@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 s = set()
 
 for a in range(2, 101):

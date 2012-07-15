@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 last_10 = 0
 for i in range(1, 1001):
     last_10 += i ** i

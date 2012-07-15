@@ -1,3 +1,6 @@
+#!/usr/bin/env pypy
+
+
 def cancel(a, b):
     """cancel the common terms of a and b"""
     al, ar = "%02d" % a
@@ -20,5 +23,5 @@ def cancel(a, b):
 for a in range(1, 100):
     for b in range(a + 1, 100):
         ret = cancel(a, b)
-        if ret != None and ret == float(a) / float(b):
+        if ret is not None and ret == float(a) / float(b):
             print a, b

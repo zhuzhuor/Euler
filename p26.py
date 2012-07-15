@@ -1,3 +1,6 @@
+#!/usr/bin/env pypy
+
+
 def len_recur(n):
     r = 1
     q_r_list = []
@@ -18,7 +21,7 @@ def len_recur(n):
             r *= 10
 
 max_len = 0
-max_n   = None
+max_n = None
 for i in range(2, 1000):
     l = len_recur(i)
     if max_len < l:

@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 n = 1
 sum = n
 
@@ -9,6 +11,3 @@ for i in range(500):
         n += step
         sum += n
 print sum
-
-
-

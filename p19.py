@@ -1,3 +1,6 @@
+#!/usr/bin/env pypy
+
+
 def is_leap_year(year):
     if year % 4 == 0:
         if year % 100 == 0:
@@ -10,6 +13,7 @@ def is_leap_year(year):
     else:
         return False
 
+
 def num_days(year, month):
     assert month >= 1 and month <= 12
     if month in (1, 3, 5, 7, 8, 10, 12):
@@ -21,6 +25,7 @@ def num_days(year, month):
             return 29
         else:
             return 28
+
 
 def total_num_days(year, month, day):
     total_num = 0
@@ -35,6 +40,7 @@ def total_num_days(year, month, day):
 
     return total_num
 
+
 def which_day(year, month, day):
     n = total_num_days(year, month, day) + 1
     return n % 7
@@ -45,5 +51,5 @@ for y in range(1901, 2001):
     for m in range(1, 13):
         if 0 == which_day(y, m, 1):
             count += 1
-print count
 
+print count

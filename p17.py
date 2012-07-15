@@ -1,11 +1,17 @@
+#!/usr/bin/env pypy
+
 below_20 = (
-    None, 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
-    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
+    None, 'one', 'two', 'three', 'four',
+    'five', 'six', 'seven', 'eight', 'nine',
+    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
+    'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
 )
 
 tens = (
-    None, None, 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',
+    None, None, 'twenty', 'thirty', 'forty',
+    'fifty', 'sixty', 'seventy', 'eighty', 'ninety',
 )
+
 
 def english(x):
     assert x <= 1000
@@ -33,6 +39,7 @@ def english(x):
                 ret += '-' + below_20[x]
         return ret
 
+
 def num(s):
     return len(s.replace(' ', '').replace('-', ''))
 
@@ -41,4 +48,3 @@ for i in range(1, 1001):
     words = english(i)
     sum += num(words)
 print sum
-

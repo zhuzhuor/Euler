@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 s = ''
 i = 1
 while True:
@@ -7,4 +9,5 @@ while True:
     else:
         break
 
-print int(s[0]) * int(s[9]) * int(s[99]) * int(s[999]) * int(s[9999]) * int(s[99999]) * int(s[999999])
+print int(s[0]) * int(s[9]) * int(s[99]) * int(s[999]) \
+        * int(s[9999]) * int(s[99999]) * int(s[999999])

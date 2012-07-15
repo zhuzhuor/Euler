@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 data = (
     (75,),
     (95, 64),
@@ -16,11 +18,12 @@ data = (
     (04, 62, 98, 27, 23,  9, 70, 98, 73, 93, 38, 53, 60, 04, 23),
 )
 
+
 def max(x, y):
     if x == 14:
         return data[x][y]
     else:
-        left  = max(x + 1, y)
+        left = max(x + 1, y)
         right = max(x + 1, y + 1)
         if left > right:
             return data[x][y] + left
@@ -28,6 +31,3 @@ def max(x, y):
             return data[x][y] + right
 
 print max(0, 0)
-
-
-

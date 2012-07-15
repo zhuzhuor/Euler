@@ -1,3 +1,6 @@
+#!/usr/bin/env pypy
+
+
 def is_plaindromic(x):
     return str(x) == str(x)[::-1]
 

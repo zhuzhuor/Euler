@@ -1,3 +1,5 @@
+#!/usr/bin/env pypy
+
 set_p = set()
 for i in range(166, 100000):
     set_p.add(i * (3 * i - 1) / 2)

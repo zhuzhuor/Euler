@@ -1,8 +1,12 @@
+#!/usr/bin/env pypy
+
+
 def is_dividable(a, b):
     if (a / b) * b == a:
         return True
     else:
         return False
+
 
 def rm(a, b):
     """remove b from a"""
@@ -13,11 +17,12 @@ def rm(a, b):
             a /= b
         return a
 
+
 def lexp(a):
     if a == 1:
         return 1
     else:
-        r = a 
+        r = a
         while r * a <= 20:
             r *= a
     return r
@@ -36,5 +41,3 @@ print x
 
 import operator
 print reduce(operator.mul, x)
-
-

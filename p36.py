@@ -1,5 +1,8 @@
+#!/usr/bin/env pypy
+
+
 def is_both(x):
-    base2 =  bin(x)[2:]
+    base2 = bin(x)[2:]
     base10 = str(x)
 
     if base2 == base2[::-1] and base10 == base10[::-1]:

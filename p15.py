@@ -1,4 +1,7 @@
+#!/usr/bin/env pypy
+
 num = [[None] * 21] * 21
+
 
 def compute(x, y):
     if x == 0 or y == 0:

@@ -1,3 +1,6 @@
+#!/usr/bin/env pypy
+
+
 def get_next(x):
     if x % 2:
         return 3 * x + 1
@@ -29,5 +32,3 @@ for i in range(3, 1000000):
 
 print
 print longest
-
-
