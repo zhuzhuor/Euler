@@ -5,6 +5,7 @@
 .DS_Store
 
 # sage generated temp files
+gen_primes.py
 p3.py
 p7.py
 p10.py
@@ -21,3 +22,4 @@ p49.py
 p50.py
 p51.py
 p58.py
+p60.py
